@@ -1,0 +1,43 @@
+
+/* container: aqui guardo toda la tabla completa */
+.container{
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
+}
+/* table: aqui guardo los titulo y sus respectivos detalles en columnas*/
+.table{ 
+    flex-direction: column;
+    height:100%;
+    padding-left: 2px;
+  /*  padding-right:9.99%;*/
+    border: 1px solid black;
+    
+}
+
+/* los hijos div de la clase table se someten a las siguientes reglas*/
+.table div{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 7rem;
+    border-bottom: 1px solid black;
+}
+/* color: esta clase le da el background a un row intermedio*/
+.color{
+    background: rgb(241, 240, 240);
+}
+
+
+/* cuando estoy por debajo de 992 utilizo modifico el container dandole wrap para que los columnas bajen segun su 
+resolucion */
+
+/*Tablet and movil*/
+@media (max-width: 992px)  {
+    .container{
+        flex-wrap: wrap;
+    }
+}
+/*fin table and movil*/
+
+
+
