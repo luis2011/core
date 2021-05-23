@@ -69,8 +69,6 @@ iframe{
 
 
 
-
-
 @media (max-width: 479px)  {
     .container{
       flex-direction: column;
